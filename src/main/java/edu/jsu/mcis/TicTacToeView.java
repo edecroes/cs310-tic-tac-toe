@@ -38,7 +38,10 @@ public class TicTacToeView {
         /* Display a prompt for the player's next move (see examples) */
 
         /* INSERT YOUR CODE HERE */
+		system.out.println("Player 1 (X)");
+		system.out.println("Player 2 (O)");
 		system.out.println("Enter the row and column numbers, separated by a space: ");
+		system.input
 
     }
 

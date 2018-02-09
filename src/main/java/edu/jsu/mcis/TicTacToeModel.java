@@ -174,6 +174,19 @@ public class TicTacToeModel{
            value */
         
         /* INSERT YOUR CODE HERE */
+		
+		if(isMarkWin(Mark.X)){
+			return Result.X;
+		}
+		else if(isMarkWin(Mark.O)){
+			return Result.O;
+		}
+		else if(isTie()){
+			return Result.Tie;
+		}
+		else{
+			return Result.NONE;
+		}
 
         return null; /* remove this line! */
 
@@ -185,6 +198,26 @@ public class TicTacToeModel{
            winner */
         
         /* INSERT YOUR CODE HERE */
+		
+		boolean win = false;
+		
+		while(win = !true){
+			for(int i; i
+			for(int i; i < getWidth(); i++){
+				for(int j; j < getWidth(); j++){
+					if(Mark == "X"){
+						win = true;
+					}
+					if else(Mark == "O"){
+						win = true;
+					}
+					else{
+						win = false;
+					}
+				}
+			}
+		}
+		
 		
         return false; /* remove this line! */
 
@@ -225,3 +258,9 @@ public class TicTacToeModel{
     }
     
 }
+for(int i; i < getWidth(); i++){
+				for(int j; j < getWidth(); j++){
+					if (mark.equals(getMark(i, j)))
+						matches = true
+					else if (mark.equals(getMark(j, i))))
+					else if(mark.equals(getMark(rowi+j))
