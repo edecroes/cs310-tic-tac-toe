@@ -74,10 +74,20 @@ public class TicTacToeModel{
         /* Create grid (width x width) as a 2D Mark array */
 
         /* INSERT YOUR CODE HERE */
+		
+		grid = new Mark[width][width];
 
         /* Initialize grid by filling every square with empty marks */
-
-        /* INSERT YOUR CODE HERE */
+		
+		/* INSERT YOUR CODE HERE */
+		
+		for (int i = 0; i < grid.length; i++)
+		{
+			for (int j = 0; j < grid.length; j++)
+			{
+				grid[i][j] = Mark.EMPTY;
+			}
+		}
         
     }
 	
@@ -88,6 +98,26 @@ public class TicTacToeModel{
            empty! */
         
         /* INSERT YOUR CODE HERE */
+		
+		if(isValidSquare(row, col) && !isSquareMarked(row, col)){
+			if(xTurn){
+				grid[row][col] = Mark.x;
+			}
+			else{
+				grid[row][col] = Mark.O;
+			}
+		
+		if(grid[row][col].equals(Mark.EMPTY)){
+			if(xTurn)
+			{
+				grid[row][col] = Mark.X;
+				return true;
+			}
+			else{
+				grid[row][col] = Mark.O;
+				return true;
+			}
+		}
 
         return false; /* remove this line! */
         
@@ -98,6 +128,20 @@ public class TicTacToeModel{
         /* Return true if specified location is within grid bounds */
         
         /* INSERT YOUR CODE HERE */
+		
+		if(!(row > model.getWidth()));
+		{
+			if(!col > model.getWidth()))
+			{
+				model.makeMark(row, col);
+			}
+			else{
+				view.showInputError();
+			}
+			else{
+				view.showInputError();
+			}
+		}
 
         return false; /* remove this line! */
         
@@ -141,7 +185,7 @@ public class TicTacToeModel{
            winner */
         
         /* INSERT YOUR CODE HERE */
-
+		
         return false; /* remove this line! */
 
     }
