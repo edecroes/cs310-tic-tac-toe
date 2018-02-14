@@ -25,6 +25,8 @@ public class TicTacToe {
 
         TicTacToeModel model = new TicTacToeModel(width);
         TicTacToeView view = new TicTacToeView(model);
+		
+		//delete all the lines
         TicTacToeController controller = new TicTacToeController(model, view);
         
         /* MAIN LOOP */
