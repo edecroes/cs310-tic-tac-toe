@@ -125,7 +125,8 @@ public class TicTacToeModel{
 			if((col < width) && (col>=0))
 				return true;
 		return false;
-	}
+
+		}
 	
     private boolean isSquareMarked(int row, int col) {
         
